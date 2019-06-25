@@ -1,0 +1,64 @@
+body{
+  background-image: url(wall.jpg)
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header{
+  background-color: rgba(250,237, 2, 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0'
+  height: 100px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+}
+
+.counter{
+  color: #F05B27;
+  font-family: 'Parisienne', cursive;
+  text-shadow: 2px 2px black;
+  font-size: 3rem;
+  line-height: 33%;
+}
+
+h1{
+  margin: 0;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  margin-top: 100px;
+{
+
+.bottle{
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bottle:hover{
+  transform: scale(1.1);
+}
+
+.bottle.drank{
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+@media only screen and (max-width: 60px) {
+  h1{
+    font-size: 1.5rem;
+  }
+  .counter{
+    font-size: 2rem;
+  }
+}
